@@ -1,0 +1,26 @@
+https://www.girocockpit.de/user
+http://api.girocheckout.de/en:girocheckout:giropay:start
+
+//sample curl
+curl -i -d "merchantId=3612528" \
+     -d "projectId=12103" \
+     -d "bic=TESTDETT421" \
+     -d "hash=f92cc62b8ff753387d265bde801f5091" \
+     https://payment.girosolution.de/girocheckout/api/v2/giropay/bankstatus
+
+HTTP/1.1 200 OK
+Date: Thu, 23 Apr 2015 06:14:53 GMT
+Server: Apache/2.2.22 (Ubuntu)
+Expires: Sun, 19 Nov 1978 05:00:00 GMT
+Last-Modified: Thu, 23 Apr 2015 06:14:53 GMT
+Cache-Control: no-cache, must-revalidate, post-check=0, pre-check=0
+ETag: "1429769693"
+hash: 7b3862d7eb7d3be5408929fdeef4ac65
+Content-Length: 191
+Content-Type: application/json
+
+{"reference":"9dfbd5f1-6445-4dab-92db-3968642e9bae","merchantTxId":"5207420","backendTxId":"SI8K7YXUZ2","amount":"206","currency":"EUR","resultPayment":"4501","resultAVS":"0","rc":0,"msg":""}
+
+//remove object method autocomplete
+Go to Preferences -> Java -> Appearance -> Type Filters 2) Click Add, and enter java.lang.Object
+

@@ -1,13 +1,12 @@
-package br.com.bdmstyle.demodsl;
+package br.com.bdmstyle.client;
 
 import javax.crypto.Mac;
 import javax.crypto.spec.SecretKeySpec;
 
 public class Security {
 
-	public static String hmacDigest(String msg) {
-		String keyString = "CumaVbB5xGac";
-		String algo = "CumaVbB5xGac";
+	public static String hmacDigest(String msg,String keyString) {
+		String algo = "HmacMD5";
 
 		String digest = null;
 		try {
